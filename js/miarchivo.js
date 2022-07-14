@@ -32,4 +32,21 @@ function calcular() {
 
    document.getElementById("resultado").innerHTML=(parseInt(t1)+parseInt(t2)+parseInt(t3)+parseInt(t4)+parseInt(t5))*1.21;
 
+   var numeros=[];
+
+   numeros[0]=t1;
+   numeros[1]=t2;
+   numeros[2]=t3;
+   numeros[3]=t4;
+   numeros[4]=t5;
+
+   for (let index = 0; index < numeros.length; index++) {
+   console.log (numeros[index]);
+      
+   }
+
+
+
+
 }
+
