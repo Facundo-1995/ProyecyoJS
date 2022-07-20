@@ -1,52 +1,14 @@
-// function bucle(){
+var articulo = [];
 
-//     var num=prompt("ingrese un numero",);
-
-//      for (let index = 0; index < num; index++) {
-
-//         console.log("hola "+index);
-            
-//      }
-    
-// }
-
-// function bucle(){
-//     var con="";
-//     var text=prompt("Ingrese un texto. Para finalizar ingrese ESC");
-//     while (text!="ESC"){
-//         con=con+text;
-//         console.log(con);
-//         text=prompt("Ingrese un texto. Para finalizar ingrese ESC");
-//     }
-// }
-
-// window.onload=bucle();
-
-function calcular() {
-
-   var t1=document.getElementById("texto1").value; 
-   var t2=document.getElementById("texto2").value;
-   var t3=document.getElementById("texto3").value;
-   var t4=document.getElementById("texto4").value;
-   var t5=document.getElementById("texto5").value;
-
-   document.getElementById("resultado").innerHTML=(parseInt(t1)+parseInt(t2)+parseInt(t3)+parseInt(t4)+parseInt(t5))*1.21;
-
-   var numeros=[];
-
-   numeros[0]=t1;
-   numeros[1]=t2;
-   numeros[2]=t3;
-   numeros[3]=t4;
-   numeros[4]=t5;
-
-   for (let index = 0; index < numeros.length; index++) {
-   console.log (numeros[index]);
-      
-   }
-
-
-
-
+function agregar() {
+   var t1 = prompt("Ingrese un texto");//document.getElementById("texto1").value;
+   articulo[articulo.length] = t1; 
+//   document.getElementById("texto1").value="";
 }
 
+function mostrar() {
+   for (let index = 0; index < articulo.length; index++) {
+      console.log(articulo[index]);
+
+   }
+}
